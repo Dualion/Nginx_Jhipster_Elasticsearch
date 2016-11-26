@@ -5,6 +5,7 @@ services:
         external_links:
             - nginxdocker-mysql:mysql
             - nginxdocker-elasticsearch:elasticsearch
+            - nginxdocker-nginx:nginx
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
             - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/nginxdocker?useUnicode=true&characterEncoding=utf8&useSSL=false
@@ -20,3 +21,7 @@ services:
         extends:
             file: elasticsearch.yml
             service: nginxdocker-elasticsearch
+    nginxdocker-nginx:
+        extends:
+            file: nginx.yml
+            service: nginxdocker-nginx
