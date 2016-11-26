@@ -3,8 +3,8 @@ services:
     nginxdocker-nginx:
         container_name: nginxdocker-nginx
         build: ./nginx/
-        # volumes:
-        #     - ~/volumes/jhipster/NginxDocker/elasticsearch/:/usr/share/elasticsearch/data/
+        volumes:
+            - ~/volumes/jhipster/NginxDocker/log/:/var/log/nginx/
         ports:
             - 80:80
             - 443:443
