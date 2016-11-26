@@ -92,6 +92,12 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 
 To set up a CI environment, consult the [Setting up Continuous Integration][] page.
 
+## Extra Info
+
+PhantomJS dependency
+
+    sudo apt-get install libfontconfig
+
 [JHipster Homepage and latest documentation]: https://jhipster.github.io
 [JHipster 3.11.0 archive]: https://jhipster.github.io/documentation-archive/v3.11.0
 
